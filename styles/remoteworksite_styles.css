@@ -44,6 +44,7 @@ header img {
 
 header ul {
     margin: none;
+    margin-right: 175px;
     padding: none;
     display: flex;
     align-items: center;
@@ -61,21 +62,23 @@ header a {
 
 header button {
     height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     border: none;
     font-size: 25px;
     background-color: white;
-    transition: background-color, color, 0.15s;
+    color: black;
+    z-index: 0;
+    transition: color, 0.15s;
+    transition: background-color 0.15s;
 }
 
-header button:hover,
-header ul li:hover {
+header button:hover {
     background-color: rgb(169, 17, 47);
     color: white;
     cursor: pointer;
-    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.571);
+    z-index: 100;
 }
 
 main {
