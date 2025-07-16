@@ -1,0 +1,242 @@
+* {
+    font-family: SanFrancisco;
+}
+
+@font-face {
+    font-family: SanFrancisco;
+    src: url(fonts/SF-Pro-Display-Regular.ttf);
+}
+
+@font-face {
+    font-family: SanFrancisco;
+    src: url(fonts/SF-Pro-Display-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.171);
+}
+
+header img {
+    height: 35px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+header ul {
+    margin: none;
+    padding: none;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+header ul li {
+    list-style-type: none;
+    height: 70px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: white;
+}
+
+header a {
+    height: 100%;
+}
+
+header button {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    font-size: 25px;
+    background-color: white;
+    transition: background-color, color, 0.15s;
+}
+
+header button:hover,
+header ul li:hover {
+    background-color: rgb(169, 17, 47);
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.571);
+}
+
+main {
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.scroll-snapping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    height: 92vh;
+    margin-top: 70px;
+}
+
+main div.page-title-container {
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 50px;
+    scroll-snap-align: center;
+}
+
+main div.page-title {
+    line-height: 80vh;
+    font-size: 90px;
+    letter-spacing: 2px;
+}
+
+main div.tile {
+    box-shadow: 2px 2px 15px black;
+    border-radius: 25px;
+    padding: 35px;
+    aspect-ratio: 1/1;
+    background-color: #000000;
+    background-image: radial-gradient(circle at -30% -20%, #f80dadd5 31%, transparent 89.05%),radial-gradient(circle at -139% 192%, #3300ffd8 50%, transparent 116.05%);
+    margin: 50px;
+    margin-bottom: 150px;
+    flex: none;
+    scroll-snap-align: center;
+}
+
+
+main div.tile-content {
+    color: rgb(232, 231, 231);
+    line-height: 30px;
+}
+
+#quiz {
+  margin: 0 auto;
+  padding: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+#quiz p {
+    color: white;
+    font-size: 20px;
+}
+
+#quiz button.option-button {
+    background: none;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: background-color 0.15s;
+}
+
+#quiz button:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+#quiz button.selected {
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+#question {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#options {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 3px solid white;
+    background: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-page-container {
+    margin-top: 115px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile-contact-content li{
+    list-style-type: none;
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.contact-tile {
+    box-shadow: 2px 2px 15px black;
+    border-radius: 25px;
+    padding: 35px;
+    aspect-ratio: 1/1;
+    background-color: #000000;
+    background-image: radial-gradient(circle at -30% -20%, #f80dadd5 31%, transparent 89.05%),radial-gradient(circle at -139% 192%, #3300ffd8 50%, transparent 116.05%);
+    margin: 50px;
+    margin-bottom: 150px;
+}
+
+@media (min-width: 1200px) {
+    .tile-content {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .tile {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tile-content {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 35
+    }
+    
+    .tile {
+        width: 45%;
+    }
+}
