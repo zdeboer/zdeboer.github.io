@@ -187,7 +187,7 @@ main div.tile-content {
 }
 
 .contact-page-container {
-    margin-top: 115px;
+    padding-top: 60px;
     padding-left: 100px;
     display: flex;
     justify-content: space-between;
@@ -196,8 +196,8 @@ main div.tile-content {
 .tile-contact-content li{
     list-style-type: none;
     color: white;
-    font-size: 25px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 60px;
 }
 
 .contact-tile {
