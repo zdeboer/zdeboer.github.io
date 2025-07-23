@@ -201,14 +201,18 @@ main div.tile-content {
 }
 
 .contact-tile {
+    width: 600px;
     box-shadow: 2px 2px 15px black;
     border-radius: 25px;
     padding: 35px;
-    aspect-ratio: 1/1;
     background-color: #000000;
     background-image: radial-gradient(circle at -30% -20%, #f80dadd5 31%, transparent 89.05%),radial-gradient(circle at -139% 192%, #3300ffd8 50%, transparent 116.05%);
     margin: 50px;
     margin-bottom: 150px;
+}
+
+.tile-contact-content span{
+    float: right;
 }
 
 @media (min-width: 1200px) {
