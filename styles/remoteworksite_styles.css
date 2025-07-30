@@ -122,10 +122,17 @@ main div.tile {
     scroll-snap-align: center;
 }
 
+.tile-title {
+    font-size: 35px;
+}
 
 main div.tile-content {
     color: rgb(232, 231, 231);
-    line-height: 30px;
+    font-size: 25px;
+}
+
+main div.tile-content ul li {
+    margin-bottom: 15px;
 }
 
 #quiz {
@@ -164,7 +171,8 @@ main div.tile-content {
 #question {
     margin-bottom: 20px;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #options {
@@ -213,6 +221,10 @@ main div.tile-content {
 
 .tile-contact-content span{
     float: right;
+}
+
+#sources-tile p{
+    font-size: 20px;
 }
 
 @media (min-width: 1200px) {
