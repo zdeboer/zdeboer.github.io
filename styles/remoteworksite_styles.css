@@ -107,6 +107,33 @@ main div.page-title {
     line-height: 80vh;
     font-size: 90px;
     letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+main div.source-page-title-container {
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 50px;
+    scroll-snap-align: center;
+}
+
+main div.source-page-title {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    font-size: 90px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.source-page-title span {
+    color: grey;
+    font-size: 40px;
+    align-self: center;
+    margin-top: 20px;
 }
 
 main div.tile {
@@ -226,6 +253,8 @@ main div.tile-content ul li {
 #sources-tile p{
     font-size: 20px;
 }
+
+
 
 @media (min-width: 1200px) {
     .tile-content {
